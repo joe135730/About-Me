@@ -19,7 +19,7 @@
       </p>
     </div>
   
-    <div class="form">
+    <!-- <div class="form">
       <input
         type="text"
         class="form-input px-4 py-3 w-full text-xl"
@@ -49,7 +49,7 @@
         :value="state.message"
       />
       <button class="send text-xl">Send Message</button>
-    </div>
+    </div> -->
   </template>
   
   <script>
@@ -69,20 +69,20 @@
   
   export default {
     setup() {
-      const state = reactive({
-        name: "",
-        email: "",
-        subject: "",
-        message: ""
-      })
-      const rules = reactive({
-        name: { required },
-        email: { required },
-        subject: { required },
-        message: { required }
-      })
-      const v$ = useVuelidate(rules, state)
-      return { state, v$ }
+      // const state = reactive({
+      //   name: "",
+      //   email: "",
+      //   subject: "",
+      //   message: ""
+      // })
+      // const rules = reactive({
+      //   name: { required },
+      //   email: { required },
+      //   subject: { required },
+      //   message: { required }
+      // })
+      // const v$ = useVuelidate(rules, state)
+      // return { state, v$ }
     }
   }
   </script>
